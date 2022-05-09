@@ -1,0 +1,956 @@
+
+/****************** rest *************************/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+
+/******************* body *************************/
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+/********************** img ************************/
+img{
+    max-width: 100%;
+    height: auto;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* color code */
+:root{
+    --primary:#06C167;
+    --secondary:#1D1D1F;
+    --bg:#F3FCF7;
+    --pure:#fff;
+    --dark:#000;
+}
+
+/********************** font size ************************/
+
+.hero-title{
+    font-size: 4.68rem;
+    font-weight: 600;
+    line-height: 90px;
+}
+.block-hint{
+    font-size:0.938rem;
+    font-weight: 500;
+    /* line-height: 18px; */
+}
+.block-title{
+    font-size:3.75rem;
+    font-weight: 500;
+    /* line-height: 72px; */
+}
+.block-description{
+    font-size: 1rem;
+}
+.btn{
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    border:none;
+    outline: none;
+    transition: 0.3s;
+}
+.btn .fas{
+    margin-left: 18px;
+    
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--pure);
+    border:2px solid transparent;
+    display: inline-flex;
+}
+.btn-primary:hover{
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+.fa-long-arrow-alt-right{
+   font-size: 20px;
+   height: 11px;
+   
+   
+}
+.btn .fas:hover{
+    color: var(--primary);
+}
+
+
+.btn-1{
+    padding: 10px 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    border:none;
+    outline: none;
+    transition: 0.3s;
+}
+.btn-1 .fas{
+    margin-left: 8px;
+    
+}
+.btn-secondary{
+    background-color:#E6F9F0;;
+    color: var(--primary);
+    border:2px solid transparent;
+    display: inline-flex;
+}
+.btn-secondary:hover{
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+}
+.fa-long-arrow-alt-right{
+   font-size: 20px;
+   height: 11px;
+   
+   
+}
+.btn-1 .fas:hover{
+    color: var(--primary);
+}
+
+.btn-2{
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    border:none;
+    outline: none;
+    transition: 0.3s;
+}
+.btn-2 .fas{
+    margin-left: 10px;
+    
+}
+.btn-ternary{
+    background-color:transparent;
+    color: var(--primary);
+    border:2px solid var(--primary);
+    display: inline-flex;
+}
+.btn-ternary:hover{
+    border: 2px solid transparent;
+    background: var(--primary);
+    color: var(--pure);
+}
+.fa-long-arrow-alt-right{
+   font-size: 20px;
+   height: 11px;
+   
+   
+}
+.btn-2 .fas:hover{
+    color: var(--pure);
+}
+.btn-3{
+    padding:6px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    transition: 0.3s;
+}
+
+ a{
+    text-decoration: none;
+}
+/********************************** container ***************************************/
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+/************************************************* css basic done 
+                                                                 *********************************************************/
+
+/*************************************************** start header *******************************************************/
+
+.hp-main-header{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 999;
+}
+header.sticky{
+    background-color: var(--primary);
+    
+}
+header.sticky ul li a{
+    background-color: var(--primary);
+    color:var(--pure);
+}
+header.sticky .brand_logo{
+    color: var(--pure);
+}
+ 
+.right_menu{
+    text-align: right;
+}
+.menu-wrapper{
+    padding-bottom: 1rem;
+}
+
+.right_menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 0 1.2rem 2rem;
+    
+}
+.right_menu ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: var(--primary);
+    transition: 0.3s;
+    
+}
+.right_menu ul li a.active{
+    color: var(--secondary);
+}
+.right_menu ul li a:hover{
+    color: var(--secondary);
+}
+.brand_logo{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--primary);
+    top: 1.5rem;
+    position: relative;
+}
+.right_menu span {
+    top: -15px;
+    position: relative;
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+.right_menu span i{
+    border: 2px solid var(--pure);
+    color: var(--pure);
+    padding: 0.2rem 0.4rem;
+}
+
+/*************************************************** finish header *****************************************************/
+
+/*************************************************** start hero-section ***********************************************/
+.hp-hero-section{
+    background-color: var(--bg);
+    min-height:665px;
+    position: relative;
+   margin-bottom: 10rem;
+}
+
+.hero-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+.hero-wrapper .left-hero{
+    max-width: 535px;
+    position: relative;
+    top: 50px;
+  } 
+  .hero-wrapper .right-hero{
+      position: relative;
+      bottom: -160px;
+      left: 120px;
+  }
+.left-hero .hero-title{
+      padding-bottom: 1rem;
+  }
+.left-hero .block-description{
+     padding-bottom: 2rem;
+     line-height: 22px;
+     opacity: 70%;
+}
+.hero-rate{
+      position: absolute;
+      top:46%;
+      left:-88px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      background-color: var(--pure);
+      padding: 18px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+  }
+  .hero-rate .rate{
+      padding-right: 0.8rem;
+  }
+  .hero-rate .fa-star{
+      color: var(--primary);
+  }
+
+  .hero-rate-customer{
+      position: absolute;
+      top: 32%;
+      right: -37px;
+      background-color: var(--pure);
+      padding: 12px;
+      border-radius: 50px;
+      display: inline-flex;
+      text-align: center;
+      align-items: center;
+      cursor: pointer;
+  }
+  .hero-rate-customer img{
+    padding-right: 0.8rem;
+    width: 40px; 
+  }
+  .hero-rate-customer  span{
+      font-size: 15px;
+      font-weight: 500;
+  }
+  .right-hero .hero-polcadot  {
+      position: absolute;
+      right: -35px;
+      bottom: 0;
+  }
+  .hp-hero-section .hero-brand{
+      position: absolute;
+      bottom: -100px;
+  }
+  .hp-hero-section .hero-brand a{
+      margin-right: 2rem;
+  }
+/*************************************************** End hero-section ***********************************************/
+
+/*************************************************** start features-section ***************************************/
+.hp-feature-section{
+    margin: 18rem 0 4rem 0;
+     
+
+}
+.feature-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 2rem;
+    border-bottom: 1.5px solid #707070;
+    border-top: 1.5px solid #707070;
+    padding: 4rem 0; 
+    
+}
+.feature-box{
+    display:flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.feature-img{
+    display:inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    z-index: -1;
+    border-radius: 4px;
+    width: 70px;
+    height: 70px;
+}
+.feature-text-box{
+    margin-left: 1rem;
+}
+.feature-title{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 0.4rem;
+}
+.feature-text-box .block-description{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1rem;
+    opacity: 75%;
+}
+/*************************************************** End features-section ***************************************/
+
+/*************************************************** start benefit-section *************************************/
+.hp-benefit-section{
+    padding: 5rem 0;
+}
+.benefit-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-benefit img {
+    background-color:var(--bg);
+    padding:0 50px 80px 50px;
+}
+.left-benefit{
+    margin:0 auto;
+}
+
+
+.benefit-topic .fa-check{
+    color: var(--primary);
+    padding-right: 0.8rem;
+}
+.benefit-topic .block-description{
+    margin-bottom: 1.2rem;
+    
+}
+.right-benefit .block-title{
+    margin: 1.5rem 0 4rem 0;
+}
+.right-benefit .benefit-polcadot{
+    position: absolute;
+    z-index: -1;
+    
+}
+/*************************************************** End benefit-section *************************************/
+
+/************************************************** start our-stars-section ***************************************/
+.hp-our-stars-section{
+    padding: 5rem 0;
+}
+.our-starts-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.stars-polcadot{
+    position: absolute;
+    z-index: -1;
+}
+.stars-counter-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+}
+.left-stars .block-title{
+    padding: 1rem 0 2.5rem 0;
+} 
+.stars-counter .counter{
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 48px;  
+}
+.stars-counter .block-description{
+    font-size:1rem;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--secondary);
+    opacity: 0.6;
+    
+}
+.right-stars img{
+    background: var(--bg);
+    padding: 0 0 80px 60px;
+}
+/************************************************** End our-stars-section ***************************************/
+
+
+/************************************************** start our-features-section **********************************/
+.hp-ourfeatures-section{
+    padding: 5rem 0;
+    position: relative;
+}
+.hp-ourfeatures-section .container{
+    position: relative;
+}
+.our-features-head{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.our-features-head .block-hint{
+    margin-bottom: 1rem;
+}
+.our-features-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.our-features-img img{
+    height: 292.5px;
+    width: 292.5px;
+    
+}
+.our-features-img{
+    margin: 0 auto;
+}
+.our-feature-title{
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 38px;
+
+}
+ .our-feature-text {
+    border: 1.5px solid var(--primary);
+    max-width: 292.5px;
+    background-color: var(--bg);
+    padding: 2rem 0 1.2rem 2rem;
+    height: 292.5px;
+    margin: 0 auto;
+}
+.our-feature-text .block-description{
+    padding: 1.5rem 1.5rem 2.2rem 0;
+}
+/************************************************** End our-features-section **************************************/
+
+/************************************************** Start our-Product-section ************************************/
+.hp-product-section{
+    padding: 5rem 0;
+}
+.product-wrapper{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 2rem;   
+}
+.product-box li{
+    list-style: none;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.product-box{
+    border: 2px solid rgba(118, 118, 117, 0.25);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.product-box:hover{
+    border: 2px solid var(--primary);
+    
+}
+.product-rate .fa-star{
+    color: var(--primary);
+}
+.product-price span{
+    text-decoration: line-through;
+    font-weight: 600;
+    font-size: 20px;
+    color:#767675;
+}
+.product-price{
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 20px;
+}
+/************************************************** End our-Product-section ************************************/
+
+/************************************************** start Veggie-Foods-section *****************************/
+.hp-veggie-section{
+    padding: 5rem 0;
+    
+}
+
+.veggie-wrapper{
+    background: url(../images/Veggie\ Foods.png);
+    height: 459px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.veggie-text .block-title{
+    color: var(--pure);
+    padding-bottom: 1.5rem;
+    line-height: 72px;
+}
+.veggie-text {   
+    text-align: center;
+    max-width: 799px;
+}
+/************************************************** End Veggie-Foods-section *****************************/
+
+/************************************************* start footer-section ***********************************************/
+.hp-footer-section{
+    padding: 5rem 0;
+}
+.footer-wrapper{
+  display: grid;
+  grid-template-columns: 35% 20% 20% 30% ;   
+}
+.footer-box-logo .block-description:nth-child(2){
+   max-width: 300px;
+   padding: 1.3rem 0 1.5rem 0;
+}
+.footer-social a{
+    margin-right: 1.2rem;
+    color:var(--dark);
+    transition: 0.3s;
+}
+.footer-social a:hover{
+    margin-right: 1.2rem;
+    color:var(--primary);
+}
+.footer-logo a{
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 38px;
+    margin-top: -4px;
+}
+.footer-card .footer-title{
+    padding-bottom: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.footer-card   li{
+    padding-bottom: 0.6rem;
+    list-style: none;
+    
+}
+.footer-card li a:hover{
+    color: var(--primary);
+}
+.footer-card   li a{
+    color: var(--secondary);
+    font-weight: 400;
+    line-height: 20px;
+    transition: 0.3s;
+}
+.footer-touch .footer-title{
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.footer-form{
+    margin-top: 1.5rem;
+}
+.footer-form input[type="email"] {
+    padding: 0.625rem;
+    background: #F0F1EC;
+    border: 0;
+    outline: 0;
+    margin-bottom: 0.5rem;
+  }
+  .footer-bottom{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+  }
+  .footer-bottom .block-description{
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--secondary);
+  }
+/************************************************* end footer-section ************************************************/
+
+
+
+/************************************************* media query ************************************************************/
+
+
+
+  
+  
+  @media (max-width: 1025px)  {
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top:100px;
+        width: 100%;
+      }
+      .hero-wrapper .right-hero{
+        position: relative;
+        bottom: -160px;
+        left:0;
+    }
+    .hp-hero-section .hero-brand{
+        position: relative;
+        text-align: center;
+        bottom: -350px;
+        margin-bottom: 400px;
+        
+    }
+    .our-features-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    }
+    .product-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+        grid-gap: 2rem;   
+    } 
+    .footer-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+        grid-gap: 2rem;   
+      }
+  }
+  
+ 
+  
+  @media  (max-width: 780px) {
+    
+    .right_menu span{
+        display: block;
+    }
+    .right_menu ul li {
+        display: block;
+        text-align: left; 
+        padding-left: 0;
+        
+    }
+    #menu{
+        display: none;
+    }
+    .hp-main-header{
+        background-color: var(--primary);
+    }
+     .brand_logo{
+        color: var(--pure);
+    }
+    .right_menu ul li a{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+        color: var(--pure);
+        transition: 0.3s;
+        
+    }
+    .right_menu ul li a.active{
+        color: var(--secondary);
+    }
+    .right_menu ul li a:hover{
+        color: var(--secondary);
+    }
+    .hero-rate{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 79%;
+        z-index: 1;
+    }
+    .hero-rate-customer{
+        position: absolute;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        right: 0;
+        top: 90%;
+        z-index: 1;
+        box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.1);
+    }
+    .feature-box{
+        display:block;
+        text-align: center; 
+        margin: 0 auto;
+    }
+    .feature-img{
+        margin-bottom: 1rem;
+    }
+    .feature-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px, fr) );
+        grid-gap: 1rem;
+        
+    }
+    
+    .right-benefit{
+        /* margin: 0 auto; */
+        text-align: center;
+    }
+    .our-starts-wrapper{
+        text-align: center;
+        
+    }
+    .our-features-wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+    }
+
+    .product-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        grid-gap: 2rem;   
+    } 
+    .veggie-text .block-title{
+        font-size: 45px;
+        line-height: 55px;
+    }
+  }
+  
+  
+  
+  @media  (max-width: 426px) {
+    
+    .left-hero .hero-title{
+        font-size: 51px;
+        line-height: 60px;
+    }
+    .right-hero .hero-polcadot {
+        position: absolute;
+        top: 70%;
+        right: 0;
+        bottom: 0;
+        width: 174px;
+    }
+    .hero-rate{
+        position: absolute;
+        top: 78%;
+    }
+    .hero-rate-customer{
+        position: absolute;
+        top: 90%;
+    }
+    .hp-hero-section .hero-brand a img{
+        margin-left: 2rem;
+        width: 123px;
+    }
+    .feature-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(120px, 1fr) );
+        
+    }
+    
+    .right-benefit .block-title{
+        font-size: 45px;
+        line-height: 52px;
+        text-align: center;
+    }
+    .benefit-topic .block-description{
+        margin-bottom: 1.2rem;
+        
+    }
+    
+    .left-benefit img {
+        background: #F0F1EC;
+        padding:0 25px 30px 25px;
+        height: 417px;
+        width: 274px;
+    }
+    .stars-counter-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+        grid-gap: 2rem;
+    }
+    .left-stars .block-title{
+        font-size: 40px;
+        line-height: 52px;
+        text-align: center;
+    }
+    
+    .right-stars img {
+        background: #F0F1EC;
+        padding:0 25px 30px 25px;
+        height: 417px;
+        width: 274px;
+    }
+    .our-features-img:nth-of-type(2) { order: 1; }
+    .our-features-img:nth-of-type(4) { order: 3; }
+    .our-features-img:nth-of-type(7) { order: 5; }
+    .our-features-img:nth-of-type(8) { order:6; }
+    
+    .product-head{
+        text-align: center;   
+    }
+    .product-head .block-title{
+        font-size: 45px;
+    }
+    .our-features-head .block-title{
+        font-size: 35px;
+    }
+    .veggie-text .block-title{
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .footer-wrapper{
+        text-align: center;
+    }
+    .footer-box-logo .block-description:nth-child(2){
+        margin: 0 auto;
+    }
+  }
+
+  @media  (max-width: 376px) {
+    
+    .left-hero .block-description{
+        font-size: 14px;
+   }
+   .hero-rate{
+    position: absolute;
+    top: 77%;
+}
+.hero-rate-customer{
+    position: absolute;
+    top: 90%;
+}
+.hp-hero-section .hero-brand a img{
+
+   width:100px;
+}
+  
+.right-benefit .block-title{
+    font-size: 35px;
+    line-height: 42px;
+    font-weight: 500;
+}
+
+.left-stars .block-title{
+    font-size: 35px;
+    line-height: 52px;
+    text-align: center;
+}
+.product-head .block-title{
+    font-size: 35px;
+}
+}
+
+@media(max-width:321px){
+    .left-hero .block-description{
+        font-size: 13px;
+   }
+    .hero-rate{
+        position: absolute;
+        top: 75%;
+    }
+    .hero-rate-customer{
+        position: absolute;
+        top: 90%;
+        
+    }
+    .hp-hero-section .hero-brand a img{
+
+        width:70px;
+     }
+     .benefit-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+        grid-gap: 2rem;
+    }
+    .right-benefit .block-title{
+        font-size: 28px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .our-starts-wrapper{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+        grid-gap: 2rem;
+        
+    }
+}
