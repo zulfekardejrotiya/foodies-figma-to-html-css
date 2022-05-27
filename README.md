@@ -5,4 +5,4 @@
 ![product-3](https://user-images.githubusercontent.com/97539653/167462253-c2ef52fc-7f77-46fa-b106-e097cfca7221.png)
 ![product-4](https://user-images.githubusercontent.com/97539653/167462258-58e0cd9a-fa57-4fc4-9b96-2cb338e7ebe3.png)
 
-Link : https://zulfekardejrotiya.github.io/Foodies-Figma-To-HTML-CSS/
+Link : https://zulfekardejrotiya.github.io/foodies-figma-to-html-css/
